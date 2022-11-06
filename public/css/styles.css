@@ -1,0 +1,542 @@
+
+*{
+   
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+/*====== Header ======*/
+
+.main-header-top-bar, .main-navbar{
+    max-width: 1200px;
+}
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    width: 100vw;
+    margin: auto;
+}
+
+.hamburger-button {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: right;
+}
+
+.main-navbar {
+    display: none;
+    transition: all 0.5s;
+}
+
+.main-navbar ul li a:hover {
+    color: #1259c3
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.fa-sign-in-alt {
+    padding-left: 5px;
+}
+
+.fa-credit-card {
+    padding-left: 5px;
+}
+
+.fa-shopping-basket {
+    padding-left: 5px;
+}
+
+@media (min-width: 0px) {
+
+
+    .main-header-top-bar {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        align-items: center;
+    }
+
+    .logo {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .searchbar {
+        width: 50%;
+        border-radius: 5px;
+    }
+
+   .copy-header {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .main-header-top-bar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .copy-header {
+        width: 30%;
+        font-size: 20px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .searchbar {
+        width: 30%;
+        border-radius: 5px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .hamburger-button {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+
+    .logo {
+        width: 30%;
+        max-width: 300px;
+    }
+
+    .main-header-top-bar, .main-navbar {
+        margin: auto;
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-navbar {
+        margin-top: 50px;
+    }
+
+    .main-navbar li {
+        margin: 0 10px;
+    }
+
+    .main-navbar a {
+       font-size: 19px;
+    }
+
+    .copy-header {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+        width: 30%;
+        text-align: right;
+    }
+
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+header .searchbar .input{
+    background-color: #FFF;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-radius: 5px 0px 0px 5px;
+    width: 40vw;
+    height: 5vh;
+    border: 0px;
+}
+
+header .searchbar .submit{
+    background-color: #FFF;
+    color: #666;
+    padding: 2px;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    height: 5vh;
+    align-items: center;
+    display: flex;
+    transition: all 0.5s;
+}
+
+header .searchbar .submit .fa-search:hover {
+    color: #1259c3
+}
+
+/*====== Body ======*/
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    display: inline-block;
+    flex-grow: 0.3;
+}
+
+.discount{
+    display: inline-block;
+    flex-grow: 0.7;
+    margin-left: 5px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+}
+
+section.banner img{
+    width: 100vw;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 1s;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+
+    main section article:hover .description {
+        opacity: 100%;
+    }
+
+    main section article:hover i {
+        rotate: -90deg;
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+        border-radius: 5px;
+    }
+  
+    .description {
+        opacity: 0;
+        transition: all 0.5s;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+  
+    
+   
+
+}
+
+
+/*====== Footer ======*/
+
+
+.main-footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin-top: 80px;
+  }
+  
+  .footer-data {
+    text-align: center;
+  }
+  
+  .footer-data i {
+    color: #1259c3;
+    font-size: 2em;
+    padding: 10px 0;
+    transition: all 0.5s;
+    }
+
+  .footer-data i:hover {
+    color: #39b54a 
+    }
+  
+  .footer-data h2 {
+    color: #666;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  
+  .footer-data p {
+    color: #666;
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
+  .sub-footer {
+    border-top: 1px solid #ebebeb;
+    background-color: #ffffff;
+  }
+  
+  .sub-footer p {
+    margin: 0;
+    color: #666;
+    padding: 15px 0;
+  }
+
+
+
+@media (min-width: 769px){
+
+
+    .main-footer {
+        padding: 40px 0;
+    }
+    
+    .footer-data {
+        width: 95%;
+        margin: auto;
+    }
+
+
+    .footer-data i {
+        color: #1259c3;
+        font-size: 1.8em;
+        
+    }
+      
+    .footer-data h2 {
+        color: #666;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+      
+    .footer-data p {
+        color: #666;
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+}
+
+
+/*====== Body Register y Login======*/
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px; 
+}
+
+
+.register {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;   
+   
+}
+
+.boton-enviar {
+    background-color: #1259c3;
+    color: #FFF;   
+    width: 40vw;
+    border-radius: 5px;
+    height: 35px;
+    transition: all 0.5s;
+       
+}
+
+.boton-enviar:hover {
+    background-color: #0022AA;
+}
+
+
+.nombre-usuario {
+    width: 40vw;
+    border: none;
+    height: 35px;
+    box-shadow: 0px 0px 2px rgb(100, 100, 100);
+    border-radius: 5px;
+
+}
+
+.clave {
+    width: 40vw;
+    border: none;
+    height: 35px;
+    box-shadow: 0px 0px 2px rgb(100, 100, 100);
+    border-radius: 5px;
+}
+
+login-form {
+    
+    justify-content: center;
+    
+}
+
+form {
+    justify-content: center;
+    width: 40vw;
+}
+
+.button {
+    border: none;
+    box-shadow: 0px 0px 2px rgb(100, 100, 100);
+    width: 40vw;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.enviar, .borrar {
+    color: #FFF;
+    border: 0px;
+    padding: 20px;
+    font-size: 15px;
+    background-color: #1259c3;
+    width: 10vw;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.enviar:hover,.borrar:hover {
+    background-color: #0022AA;
+}
+
+@media (max-width: 769px) {
+    .borrar, .enviar {
+        width: 40vw;
+    }
+    
+    .enviar {
+        margin-bottom: 5px;
+    }
+
+}
